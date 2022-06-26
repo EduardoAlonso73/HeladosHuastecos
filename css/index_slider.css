@@ -1,0 +1,113 @@
+.carrousel_contenedor {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+
+}
+
+
+.carrousel_lista {
+    margin: 0px 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carrousel_anterios,
+.carrousel_siguiente {
+
+    display: block;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    font-size: 30px;
+    color: rgb(33, 26, 26);
+    opacity: 50%;
+
+}
+
+
+.carrousel_elementos {
+    margin: 0px 10px;
+    border: 1px solid rgba(121, 119, 119, 0.212);
+    padding: 10px;
+    border-radius: 10px;
+}
+h4{
+    text-align: center;
+    margin: 3px;
+}
+.carrousel_elementos > p {
+    margin: 5px 10px 0px 10px;
+    text-align: justify;
+}
+
+.carrousel_elementos:hover {
+    -webkit-box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.35);
+    transition: all 0.5s;
+}
+
+.frut-img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    min-height: 200px;
+    object-fit: contain;
+}
+
+button {
+    width: auto;
+
+}
+
+
+/* ************************************************************ 
+<!-- MEDIA QUERY -->
+************************************************************  */
+
+
+@media only screen and (min-width:300px) and (max-width:800px) {
+
+    .carrousel_lista {
+        margin: 0px 10px;
+
+
+    }
+
+    .carrousel_elementos {
+
+        margin: 0px 5px;
+        padding: 0px 2px;
+        border: none;
+
+
+    }
+
+    .frut-img {
+        display: block;
+        margin: 0px auto;
+        width: 95%;
+
+    }
+
+    .carrousel_anterios,
+    .carrousel_siguiente {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .carrousel_contenedor {
+        padding: 20px;
+    }
+
+
+
+} 

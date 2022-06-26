@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>HeladosHuastecos</title>
+
+    <link rel="icon" href="../img/icon-helado.png" />
+
+
+    <link rel="stylesheet" href="../css/mdb.min.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+
+
+
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg  fixed-top  bg-yellowk">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><img width="50" src="../img/icon-helado.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link menu-active" href="../html/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienes_somos.html">¿Quienes somos?</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center ">
+     
+            <a href="../html/registro.html"  class="btn btn-success"> Crear cuenta</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+
+    <main id="app" class="d-flex w-100 background-dack">
+
+        <div class="container d-flex flex-column">
+
+            <div class="row vh-100">
+                <div class="col-sm-10 col-md-6 col-lg-4 mx-auto d-table h-100">
+                    <div class="d-table-cell align-middle">
+
+
+                        <div class="card card-login rounded-7 bg-light ">
+                            <div class="card-body">
+                                <div class="m-sm-1">
+                                    <div class="text-center mb-4">
+                                        <img src="../img/icon-helado.png" alt="Logo" class="img-fluid " width="100" />
+                                    </div>
+                                    <form>
+                                        <div class="mb-2">
+                                            <label class="form-label mb-1 text-primary">Correo electrónico</label>
+                                            <input class="form-control form-control-lg input-login rounded-1 text-black"
+                                                v-model="v_correo" type="email" name="email"
+                                                placeholder="Introduce tu correo electrónico" />
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label mb-1 text-primary">Contraseña</label>
+                                            <input class="form-control form-control-lg input-login rounded-1 text-black"
+                                                v-model="v_pass" type="password" name="password"
+                                                placeholder="Ingresa tu contraseña" />
+
+                                        </div>
+
+                                        <div class="text-center mt-3">
+                                            <button type="button" @click="handleLogin()"
+                                                class="btn  btn-primary  rounded-8">Iniciar sesión</button>
+                                        </div>
+                                        <br>
+
+                           
+                                        <a href="recuperar_passw.html" class="account ">¿Se te olvidó tu contraseña?</a>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Helados huastecos</title>
+
+    <link rel="icon" href="../img/icon-helado.png" />
+
+
+    <link rel="stylesheet" href="../css/mdb.min.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+
+
+
+</head>
+
+<body>
+
+
+    <main id="app" class="d-flex w-100 background-dack">
+      
+        <div class="container d-flex flex-column">
+
+            <div class="row vh-100">
+                <div class="col-sm-10 col-md-6 col-lg-4 mx-auto d-table h-100">
+                    <div class="d-table-cell align-middle">
+
+                        <div class="text-center mt-4">
+                            <h1 class="h3 text-golden ">Restablecer su contraseña</h1>
+                            <br>
+                        </div>
+
+                        <div class="card card-login rounded-7 bg-light bg-gradient ">
+                            <div class="card-body">
+                                <div class="m-sm-4">
+                                    <div class="text-center mb-4">
+                                        <img src="../img/contrasena.png" alt="Logo" class="img-fluid " width="100" />
+                                    </div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label mb-1 text-primary">Correo electrónico</label>
+                                            <input class="form-control form-control-lg input-login rounded-1 text-black"
+                                                v-model="v_correo" type="email" name="email"
+                                                placeholder="Introduce tu correo electrónico" />
+                                        </div>
+
+                                        <br>
+                                        <div class="text-center mt-3">
+                                            <button type="button" @click="handleLogin()"
+                                                class="btn btn-lg btn-black bg-primary  rounded-8">Obtener enlace
+                                            </button>
+                                        </div>
+                                        <br>
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
