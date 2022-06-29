@@ -80,24 +80,23 @@
                                     <div class="text-center mb-4">
                                         <img src="../img/icon-helado.png" alt="Logo" class="img-fluid " width="100" />
                                     </div>
-                                    <form>
+                                    <form action="../php/login.php" method="post">
                                         <div class="mb-2">
                                             <label class="form-label mb-1 text-primary">Correo electrónico</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_correo" type="email" name="email"
+                                                v-model="v_correo" type="email" name="log_email"
                                                 placeholder="Introduce tu correo electrónico" />
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label mb-1 text-primary">Contraseña</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_pass" type="password" name="password"
+                                                v-model="v_pass" type="password" name="log_password"
                                                 placeholder="Ingresa tu contraseña" />
 
                                         </div>
 
                                         <div class="text-center mt-3">
-                                            <button type="button" @click="handleLogin()"
-                                                class="btn  btn-primary  rounded-8">Iniciar sesión</button>
+                                            <input  type="submit" class="btn btn-lg btn-black  rounded-8" value="Iniciar sesión">
                                         </div>
                                         <br>
 

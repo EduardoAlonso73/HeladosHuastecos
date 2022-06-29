@@ -80,37 +80,38 @@
                                         <h1 class="h2 text-golden fs-3 text-dark">Datos de registro</h1>
                                         <hr>
                                     </div>
-                                    <form>
+                                    <form action="../php/registration.php" method="post">
                                         <div class="mb-3">
                                             <label class="form-label mb-1 text-primary">Usuario</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_user" type="text" name="text"
+                                                v-model="v_user" type="text" name="inp_usario" required
                                                 placeholder="Introduce tu usuario" />
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label mb-1 text-primary">Correo electrónico</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_correo" type="email" name="email"
-                                                placeholder="Introduce tu correo electrónico" />
+                                                v-model="v_correo" type="email" name="inp_email"
+                                                placeholder="Introduce tu correo electrónico"  />
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label mb-1 text-primary">Contraseña</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_pass" type="password" name="password"
+                                                v-model="v_pass" type="password" name="inp_password"
                                                 placeholder="Crea tu contraseña" />
 
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label mb-1 text-primary">Verificar contraseña</label>
                                             <input class="form-control form-control-lg input-login rounded-1 text-black"
-                                                v-model="v_pass" type="password" name="password"
+                                                v-model="v_pass" type="password" name="inp_verf_password"
                                                 placeholder=" Verificar tu contraseña" />
 
                                         </div>
 
                                         <div class="text-center mt-3">
-                                            <button type="button" @click="handleLogin()"
-                                                class="btn btn-lg btn-black  rounded-8">Crear cuenta</button>
+                                          <input  type="submit" 
+                                          class="btn btn-lg btn-black  rounded-8" value="Crear cuenta">
+                                            
                                         </div>
                                         <br>
 
