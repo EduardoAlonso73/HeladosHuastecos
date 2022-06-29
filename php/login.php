@@ -2,8 +2,8 @@
 include 'connection.php';
 $pasw=$_REQUEST['log_password'];
 $email=$_REQUEST['log_email'];
-$emailExist="SELECT email FROM user_test WHERE email = '$email'";
-$passwExist="SELECT passw FROM user_test WHERE passw = md5(\"$pasw \")";
+$emailExist="SELECT email FROM users WHERE email = '$email'";
+$passwExist="SELECT passw FROM users WHERE passw = md5(\"$pasw \")";
 $dataEmail = mysqli_query($conn,$emailExist);
 $dataPassw = mysqli_query($conn,$passwExist);
 

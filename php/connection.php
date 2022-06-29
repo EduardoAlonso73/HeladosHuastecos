@@ -9,5 +9,5 @@ $conn=mysqli_connect($service,$username,$password,$dbname);
 if(!$conn){
     die("Connection failed". mysqli_connect_error());
 }
-echo "connection successfully";
+/* echo "connection successfully"; */
 ?>
