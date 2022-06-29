@@ -3,8 +3,8 @@ include 'connection.php';
 $usernm=$_REQUEST['inp_usario'];
 $pasw=$_REQUEST['inp_password'];
 $email=$_REQUEST['inp_email'];
-$query_insert=" INSERT INTO user_test (username, passw, email) VALUES (\"$usernm \", md5(\"$pasw \"),\"$email \")";
-$emailExist="SELECT email FROM user_test WHERE email = '$email'";
+$query_insert=" INSERT INTO users (username, passw, email) VALUES (\"$usernm \", md5(\"$pasw \"),\"$email \")";
+$emailExist="SELECT email FROM users WHERE email = '$email'";
 $result = mysqli_query($conn,$emailExist);
 
 /* ************************************************************************************************************** */
